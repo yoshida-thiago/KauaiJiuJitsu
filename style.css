@@ -85,12 +85,16 @@
    border: 1px solid #000000;
  }
 
+   h1 img {
+     border-radius: 50%;
+     box-shadow: 10px 10px 20px #000000;
+   }
+
  /* Classes
 */
  .caixa {
    position: relative;
-   width: 940px;
-   margin: 0 auto;
+   margin: 0 100px 0 200px;
  }
 
  .caixa nav {
@@ -173,6 +177,11 @@
   margin: 0 auto;
 }
 
+.ponta-vermelha {
+  margin: 0 0;
+  background-color: red;
+}
+
 .beneficios {
   padding: 0 0 6em 0;
   margin: 0 auto;
@@ -215,6 +224,46 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 480px) {
+  .caixa, .principal, .objetivo, .beneficios, .beneficios-conteudo, .mapa, .mapamesmo {
+    width: auto;
+  }
+
+  h1, h2, p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10% 0 10%;
+  }
+
+  h1 img {
+    margin-bottom: 1em;
+  }
+
+  .mapamesmo {
+    margin: 0 10px;
+  }
+
+  .caixa {
+    margin: 0;
+  }
+
+  nav {
+    position: static;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    padding: 0 2em;
+  }
+
+  .beneficios-conteudo li {
+    margin: 2px 0 10px;
+    padding: 0 2em;
+  }
+}
 
 
 /* Contato */
